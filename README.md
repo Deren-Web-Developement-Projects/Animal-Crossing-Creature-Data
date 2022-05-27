@@ -1,4 +1,4 @@
-# Animal-Crossing-Creature-Data
+# Animal Crossing: New Horizons - Fish, Bug, & Sea Creature Data
 
 ## Description
 - A webpage created to be used with the video game Animal Crossing: New Horizons.
