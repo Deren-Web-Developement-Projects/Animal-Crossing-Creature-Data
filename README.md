@@ -15,4 +15,4 @@
 - HTML
 
 ---
-![Screenshot](https://github.com/Deren-Web-Developement-Projects/Odin-Foundation-Javascript/blob/701b1ae6c30367ae0d1b6c0b29fcc8b2e34762e1/Javascript/Screenshot.png)
+![Screenshot](https://github.com/Deren-Web-Developement-Projects/Animal-Crossing-Creature-Data/blob/fdecd24c4d40b6b9d163365ac25c05a06508f0e2/Screenshot.png)
