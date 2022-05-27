@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Designs.css">
+
+    <title>ACNH: Checklist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body onload="north()">
+    <!-- ********** NAVBAR ********** -->
+    <div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navBar">
+            <a class="navbar-brand" href="#">Checklist</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Top</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newFish">Fish</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newBugs">Bugs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newCreatures">Sea Creatures</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    External Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://animalcrossing.fandom.com/wiki/Fish_(New_Horizons)">Fish Wiki</a>
+                    <a class="dropdown-item" href="https://animalcrossing.fandom.com/wiki/Bugs_(New_Horizons)">Bug Wiki</a>
+                    <a class="dropdown-item" href="https://animalcrossing.fandom.com/wiki/Deep-sea_creatures_(New_Horizons)">Creature Wiki</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- ********** NAVBAR ********** -->
+    <!-- ********** JUMBO ********** -->
+    <div class="jumbotron jumbotron-fluid" id="jumboMumbo">
+        <div class="container">
+            <h1 class="display-3">Animal Crossing: New Horizons</h1>
+            <p class="lead">
+                A list of all the Fish, Bugs, & Sea Creatures available to be caught at the time this page was loaded. 
+            </p>
+            <button class="hemButton" type="button" onclick="north()">Northern Hemisphere</button>
+            <button class="hemButton" type="button" onclick="south()">Southern Hemisphere</button>
+            <p>Additional Information:</p>
+            <a href="https://animalcrossing.fandom.com/wiki/Fish_(New_Horizons)" target="_blank" title="Fandom Fish" class="btn btn-primary ">Fish</a>
+            <a href="https://animalcrossing.fandom.com/wiki/Bugs_(New_Horizons)" target="_blank" title="Fandom Bugs" class="btn btn-primary">Bugs</a>
+            <a href="https://animalcrossing.fandom.com/wiki/Deep-sea_creatures_(New_Horizons)" target="_blank" title="Fandom Creatures" class="btn btn-primary">Sea Creatures</a>
+            <p class="headerDate">Page Loaded at:</p>
+            <p id="dateTime" class="headerDate"></p>
+            <p id="dataLoad"></p>
+        </div>
+    </div>
+    <!-- ********** JUMBO ********** -->
+
+    <!-- ********** Fish Arriving ********** -->
+    <table class="table" id="newFish">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="5" class="headers">
+                    Fish Arriving
+                </th>
+            </tr>
+            <tr class="headers">
+                <th scope="col">Pic</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Times</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <!-- ********** Fish Arriving ********** -->
+
+    <!-- ********** Fish Leaving ********** -->
+    <table class="table" id="oldFish">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="5" class="headers">
+                    Fish Leaving
+                </th>
+            </tr>
+            <tr class="headers">
+                <th scope="col">Pic</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Times</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <!-- ********** Fish Leaving ********** -->
+
+    <!-- ********** Bugs Arriving ********** -->
+    <table class="table" id="newBugs">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="5" class="headers">
+                    Bugs Arriving
+                </th>
+            </tr>
+            <tr class="headers">
+                <th scope="col">Pic</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Times</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <!-- ********** Bugs Arriving ********** -->
+    <!-- ********** Bugs Leaving ********** -->
+    <table class="table" id="oldBugs">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="5" class="headers">
+                    Bugs Leaving
+                </th>
+            </tr>
+            <tr class="headers">
+                <th scope="col">Pic</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Times</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <!-- ********** Bugs Leaving ********** -->
+
+    <!-- ********** Creatures Arriving ********** -->
+    <table class="table" id="newCreatures">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="5" class="headers">
+                    Sea Creatures Arriving
+                </th>
+            </tr>
+            <tr class="headers">
+                <th scope="col">Pic</th>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Times</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <!-- ********** Creatures Arriving ********** -->
+    <!-- ********** Creatures Leaving ********** -->
+    <table class="table" id="oldCreatures">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="5" class="headers">
+                    Sea Creatures Leaving
+                </th>
+            </tr>
+            <tr class="headers">
+                <th scope="col">Pic</th>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Times</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <!-- ********** Creatures Leaving ********** -->
+
+    <script src="MyScripts.js"></script>
+
+    <!-- ********** Bootstrap Scripts ********** -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+    <!-- ********** ********** -->
